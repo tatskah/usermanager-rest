@@ -3,15 +3,11 @@ package com.taito.usermanager.service.impl;
 import java.util.List;
 import java.util.stream.Collectors;
 
-import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
-
 import com.taito.usermanager.dto.UserDto;
 import com.taito.usermanager.model.User;
-import com.taito.usermanager.dto.UserDto;
 import com.taito.usermanager.exception.DataNotFoundException;
 import com.taito.usermanager.mapper.UserMapper;
-import com.taito.usermanager.model.User;
 import com.taito.usermanager.repository.UserRepository;
 import com.taito.usermanager.service.UserService;
 

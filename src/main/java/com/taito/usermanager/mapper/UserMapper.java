@@ -1,8 +1,6 @@
 package com.taito.usermanager.mapper;
 
 import com.taito.usermanager.dto.UserDto;
-import com.taito.usermanager.model.Address;
-import com.taito.usermanager.model.Company;
 import com.taito.usermanager.model.User;
 
 public class UserMapper {
