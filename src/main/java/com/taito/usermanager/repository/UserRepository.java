@@ -7,6 +7,6 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import com.taito.usermanager.model.User;
 
 public interface UserRepository extends JpaRepository<User, Long> {
-	List<User> findByName(String name);
-	
+	@Query("SELECT u FROM User u WHERE u.name LIKE %:name%")
+	List<User> findByName(@Param("name") String name);
 }
